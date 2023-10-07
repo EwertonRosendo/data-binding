@@ -1,0 +1,16 @@
+<p>exercicios works!</p>
+<p>{{frase}}</p>
+<a href="{{link}}">renato cariri</a>
+<button [ngStyle]="{'background-color': color, 'color':colorText}">botão que muda de cor</button>
+
+<p  (click)="changeColor()" [ngStyle]="{'background-color': color, 'color':colorText}">paragrafo que muda de cor</p>
+
+<select #select (change)="setTexto(select.value)" >
+    <option value="primeiro textto">primeiro textto</option>
+    <option value="segundo texto">segundo texto</option>
+    <option value="terceiro  texto">terceiro  texto</option>
+    <option value="quarto texto">quarto texto</option>
+
+</select>
+
+<p>{{textoUnico}}</p>
